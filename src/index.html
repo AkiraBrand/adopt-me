@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
 
   <head>
@@ -11,11 +12,25 @@
 
   <body>
     <div id="root">Not Rendered</div>
+    <!-- load react library via cdn -->
     <script src="https://unpkg.com/react@16.8.4/umd/react.development.js"></script>
-    <script src="https://unpkg.com/react-dom@16.8.4/umd/react-dom.development.js
-  "></script>
+    <!-- load react dom (rendering layer) via cdn -->
+    <script src="https://unpkg.com/react-dom@16.8.4/umd/react-dom.development.js"></script>
+
   <script>
-    // your code is going to go here 
+    const App = () => {
+      return React.createElement(
+        "div",
+        {},
+        React.createElement("h1", {}, "Adopt Me!")
+      );
+    };
+
+    ReactDOM.render(
+      React.createElement(App),
+      React.getElementById("root")
+    );
+
   </script>
 
   </body>
