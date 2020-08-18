@@ -12,12 +12,12 @@
 
   <body>
     <div id="root">Not Rendered</div>
-    <!-- load react library via cdn -->
+
     <script src="https://unpkg.com/react@16.8.4/umd/react.development.js"></script>
-    <!-- load react dom (rendering layer) via cdn -->
     <script src="https://unpkg.com/react-dom@16.8.4/umd/react-dom.development.js"></script>
 
-  <script>
+    <script>
+
     const App = () => {
       return React.createElement(
         "div",
@@ -26,12 +26,9 @@
       );
     };
 
-    ReactDOM.render(
-      React.createElement(App),
-      React.getElementById("root")
-    );
+    ReactDOM.render(React.createElement(App), document.getElementById("root"));
 
-  </script>
+    </script>
 
   </body>
 
