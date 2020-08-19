@@ -1,8 +1,9 @@
-const Pet = ({ name, animal, breed}) => {
-  return React.createElement("div", {}, [ //here comes the children
+const Pet = ({ name, animal, breed }) => {
+  return React.createElement("div", {}, [
+    //here comes the children
     React.createElement("h1", {}, name),
     React.createElement("h2", {}, animal),
-    React.createElement("h2", {}, breed)
+    React.createElement("h2", {}, breed),
   ]);
 };
 
@@ -12,17 +13,18 @@ const App = () => {
     React.createElement(Pet, {
       name: "Junior",
       animal: "Dog",
-      breed: "Dauschund"
+      breed: "Dauschund",
     }),
     React.createElement(Pet, {
       name: "Sparkle Goth",
       animal: "Cat",
-      breed: "Domestic Shorthair"
+      breed: "Domestic Shorthair",
     }),
     React.createElement(Pet, {
       name: "Birbie Girl",
       animal: "Bird",
-      breed: "Cockatiel" })
+      breed: "Cockatiel",
+    }),
   ]);
 };
 
